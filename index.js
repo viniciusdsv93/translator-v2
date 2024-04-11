@@ -8,6 +8,9 @@ let idiomas = [
 	{ abrev: "es", nome: "espanhol" },
 	{ abrev: "de", nome: "alemao" },
 	{ abrev: "it", nome: "italiano" },
+	{ abrev: "ru", nome: "russo" },
+	{ abrev: "ja", nome: "japones" },
+	{ abrev: "zh-CN", nome: "chines" },
 ];
 
 idiomas.forEach((idioma) => {
