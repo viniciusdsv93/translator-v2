@@ -31,7 +31,7 @@ const fs = require("node:fs");
 
 	await cluster.idle();
 	await cluster.close();
-	fs.writeFileSync(`${abrev}.json`, JSON.stringify(jsonResult));
+	fs.writeFileSync(`output/${abrev}.json`, JSON.stringify(jsonResult));
 	console.timeEnd(`thread-${nome}`);
 	parentPort.postMessage(`Traducao concluida com sucesso para o idioma ${nome}`);
 })();

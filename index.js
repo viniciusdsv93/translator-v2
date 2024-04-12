@@ -2,6 +2,11 @@ const { Worker } = require("node:worker_threads");
 const fs = require("node:fs");
 
 const rf = fs.readFileSync("source.json");
+
+if (!fs.existsSync("./output")) {
+	fs.mkdirSync("./output");
+}
+
 let wordList = JSON.parse(rf.toString());
 let idiomas = [
 	{ abrev: "en", nome: "ingles" },
